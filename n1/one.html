@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<input type="text" id="clock" size="35" />
+		<script language=javascript>
+			var i = self.setInterval("clock()", 50)
+
+			function clock() {
+				var k = new Date();
+				document.getElementById("clock").value = k
+			}
+		</script>
+		</form>
+		<button onclick="i=window.clearInterval(i)">stop</button>
+		<progress max="100" value="85"></progress>
+		
+		<form>
+		<input id="aa" list="a" />
+		<datalist id="a">
+		<option value="a"></option>
+		<option value="b"></option>
+		</datalist>
+		</form>
+		
+		<keygen />
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+			<input type="range" id="a" value="50">100
+			<input type="number" id="b" value="50">
+		<output name="x" for="a b"></output>
+		</form>
+		<input type="range" id="a" value="50">
+	</body>
+
+</html>
